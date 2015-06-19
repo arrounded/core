@@ -1,4 +1,14 @@
 <?php
+
+/*
+ * This file is part of Arrounded
+ *
+ * (c) Madewithlove <heroes@madewithlove.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Arrounded\Core\Traits;
 
 use Illuminate\Contracts\Auth\Guard;
@@ -52,7 +62,7 @@ trait ContainerAware
     /**
      * The IoC Container.
      *
-     * @type Container
+     * @var Container
      */
     protected $app;
 
