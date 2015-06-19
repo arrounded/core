@@ -1,14 +1,14 @@
-# Arrounded/:package_name
+# Arrounded/core
 
-[![Build Status](http://img.shields.io/travis/arrounded/:package_name.svg?style=flat-square)](https://travis-ci.org/arrounded/:package_name)
-[![Latest Stable Version](http://img.shields.io/packagist/v/arrounded/:package_name.svg?style=flat-square)](https://packagist.org/packages/arrounded/:package_name)
-[![Total Downloads](http://img.shields.io/packagist/dt/arrounded/:package_name.svg?style=flat-square)](https://packagist.org/packages/arrounded/:package_name)
-[![Scrutinizer Quality Score](http://img.shields.io/scrutinizer/g/arrounded/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/arrounded/:package_name/)
-[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/arrounded/:package_name.svg?style=flat-square)](https://scrutinizer-ci.com/g/arrounded/:package_name/)
+[![Build Status](http://img.shields.io/travis/arrounded/core.svg?style=flat-square)](https://travis-ci.org/arrounded/core)
+[![Latest Stable Version](http://img.shields.io/packagist/v/arrounded/core.svg?style=flat-square)](https://packagist.org/packages/arrounded/core)
+[![Total Downloads](http://img.shields.io/packagist/dt/arrounded/core.svg?style=flat-square)](https://packagist.org/packages/arrounded/core)
+[![Scrutinizer Quality Score](http://img.shields.io/scrutinizer/g/arrounded/core.svg?style=flat-square)](https://scrutinizer-ci.com/g/arrounded/core/)
+[![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/arrounded/core.svg?style=flat-square)](https://scrutinizer-ci.com/g/arrounded/core/)
 
 To create a new Arrounded module:
 - Copy the contents of this repo
-- Replace `:package_name`
+- Replace `core`
 - Replace the author in the `LICENSE` and `composer.json` files
 - [Draw the rest of the fucking owl](http://media-cache-ak0.pinimg.com/originals/e3/ae/da/e3aedad6b73f7dce179eecd298f8aec5.jpg)
 
@@ -17,7 +17,7 @@ To create a new Arrounded module:
 Via Composer
 
 ``` bash
-$ composer require arrounded/:package_name
+$ composer require arrounded/core
 ```
 
 ## Usage

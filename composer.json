@@ -1,5 +1,5 @@
 {
-    "name": "arrounded/:package_name",
+    "name": "arrounded/core",
     "description": "The description of the module",
     "license": "MIT",
     "keywords": [
@@ -12,7 +12,10 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+        "symfony/http-foundation": "^2.7",
+        "illuminate/contracts": "^5.1",
+        "illuminate/support": "^5.1"
     },
     "require-dev": {
         "fabpot/php-cs-fixer": "2.0.*@dev",
@@ -23,16 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Arrounded\\:package_name\\": "src"
+            "Arrounded\\Core\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Arrounded\\:package_name\\": "tests"
-        },
-        "files": [
-            "tests/helpers.php"
-        ]
+            "Arrounded\\Core\\": "tests"
+        }
     },
     "scripts": {
         "test": "phpunit",
