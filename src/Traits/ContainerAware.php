@@ -26,6 +26,7 @@ use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Contracts\Queue\Queue;
 use Illuminate\Contracts\Redis\Database;
 use Illuminate\Contracts\Routing\UrlGenerator;
+use Illuminate\Routing\Router;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
