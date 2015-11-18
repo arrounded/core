@@ -21,6 +21,20 @@ abstract class AbstractComposer
     use ContainerAware;
 
     /**
+     * Get the manifest of assets compiled by Webpack.
+     *
+     * @return array
+     */
+    protected function getWebpackAssets()
+    {
+        $assets = public_path('builds/manifest.json');
+        $assets = file_get_contents($assets);
+        $assets = json_decode($assets, true);
+
+        return $assets;
+    }
+
+    /**
      * Make a menu from a list of links.
      *
      * @param array $menu
