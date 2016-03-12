@@ -26,13 +26,15 @@ use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Contracts\Queue\Queue;
 use Illuminate\Contracts\Redis\Database;
 use Illuminate\Contracts\Routing\UrlGenerator;
+use Illuminate\Routing\Redirector;
 use Illuminate\Routing\Router;
+use Illuminate\Session\SessionManager;
+use Illuminate\Session\Store;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * A class using the container underneath.
  *
- * @property \Arrounded\Arrounded                      arrounded
  * @property Guard                                     auth
  * @property Repository                                cache
  * @property \Illuminate\Contracts\Config\Repository   config
@@ -50,10 +52,10 @@ use Symfony\Component\HttpFoundation\Request;
  * @property Paginator                                 paginator
  * @property Queue                                     queue
  * @property Database                                  redis
- * @property Redirect                                  redirect
+ * @property Redirector                                redirect
  * @property Router                                    router
  * @property UrlGenerator                              url
- * @property SessionManager                            session
+ * @property SessionManager|Store                      session
  * @property Translator                                translator
  * @property \Illuminate\Contracts\Validation\Factory  validator
  * @property \Illuminate\Contracts\View\Factory        view
@@ -86,6 +88,22 @@ trait ContainerAware
      */
     public function __get($key)
     {
-        return $this->app[$key];
+        return $this->app->make($key);
+    }
+
+    /**
+     * @return Container
+     */
+    public function getApp()
+    {
+        return $this->app;
+    }
+
+    /**
+     * @param Container $app
+     */
+    public function setApp($app)
+    {
+        $this->app = $app;
     }
 }

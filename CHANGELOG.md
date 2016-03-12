@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.1
+### Fixed
+- Fixed Session typehint on `ContainerAware` trait
+
 ## 2.0.0
 ### Changed
 - Updated to Laravel 5.2
